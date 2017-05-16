@@ -2,6 +2,7 @@
 
 class Game
 {
+
 private:
         Map map;
         Player player;
