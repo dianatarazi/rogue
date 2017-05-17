@@ -11,9 +11,24 @@
 
 HighScores::HighScores()
 {
+    fileName = "Highscores.txt";
+    file.open(fileName, std::fstream::in | std::fstream::out | std::fstream::ate);
+    if(!file.is_open() || !file.good()){
+            file.open(fileName, std::fstream::out | std::fstream::trunc);
+            file.close();
+            file.open(fileName, std::fstream::in | std::fstream::out | std::fstream::ate);
+    }
+}
+
+void HighScores::writeTheScore(std::string name, int score)
+{
+    file << name << " " << score << std::endl;
 }
 
 HighScores::~HighScores()
 {
+    file.close();
 }
+
+
 

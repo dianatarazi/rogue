@@ -1,13 +1,20 @@
 #pragma once
+#include <string>
 
 class Item
 {
 private:
-    string name;
+    std::string name;
     char looks;
+    int physicalDmgBuff;
+    int magicalDmgBuff;
+    int physicalArmorBuff;
+    int magicalArmorBuff;
+    int duration;
     
 public:
     Item();
+    void display();
     ~Item();
 
 };

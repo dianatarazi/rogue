@@ -11,6 +11,26 @@
 
 Map::Map()
 {
+    
+}
+
+Map::Map(int width, int height)
+{
+}
+
+void Map::generateNewMap()
+{
+    
+}
+
+void Map::getSafeLocation(int& posX, int& posY)
+{
+    
+}
+
+void Map::openThePortal()
+{
+    
 }
 
 Map::~Map()

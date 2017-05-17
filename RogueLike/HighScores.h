@@ -1,13 +1,15 @@
 #pragma once
+#include <string>
+#include <fstream>
 
 class HighScores
 {
 private:
-    string fileName;
-    
+    std::string fileName;
+    std::fstream file;
 public:
-    HighScores(string name); // opens the certain document, or creates it if not exists
-    writeTheScore(string name, int score); //
+    HighScores(); // opens the certain document, or creates it if not exists
+    void writeTheScore(std::string name, int score); //
     ~HighScores();
 
 };
