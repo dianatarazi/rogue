@@ -1,0 +1,1 @@
+./Debug/main.cpp.o ./Debug/Game.cpp.o ./Debug/Player.cpp.o ./Debug/Enemy.cpp.o ./Debug/Map.cpp.o ./Debug/HighScores.cpp.o ./Debug/Item.cpp.o
